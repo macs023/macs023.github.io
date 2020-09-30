@@ -1,0 +1,46 @@
+:root{
+	--mainColor:#46344e;
+	--secondaryColor:#382a3f;
+
+	--borderColor:#1d1520;
+
+	--mainText:#fff;
+	--secorndaryText:#fff;
+
+	--themeDotBorder:#fff;
+
+	--previewBg:rgba(29, 21, 32, 0.8);
+	--previewShadow:#2b202f;
+
+	--buttonColor:#8534a3;
+}
+
+#navigation a {
+	color: #b62de7;
+}
+
+a {
+	color: #b62de7;	
+}
+
+#preview{
+	border:1.5px solid #b62de7;
+}
+
+.corner{
+	border:1.5px solid #b62de7;
+}
+
+p {
+	color: var(--secorndaryText);
+}
+label {
+	color: #fff;
+}
+
+#skills li {
+	color: #fff;
+}
+
+.post-section {
+	background-color: var(--secondaryColor);
