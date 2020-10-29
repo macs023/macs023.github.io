@@ -17,7 +17,7 @@
     <style type="text/css">
         html,
         body {
-            background-color: var(--secondaryColor);
+            background-color: var(--mainColor);
         }
 
         .nav-wrapper {
@@ -26,7 +26,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: var(--mainColor);
+            background-color: var(--secondaryColor);
             border-radius: 4px 4px 0 0;
         }
 
@@ -48,6 +48,26 @@
             padding: 10px;
             margin: 0 5px;
         }
+        .section1 {
+            background-color: var(--mainColor);
+            border-bottom: 1px solid var(--borderColor); 
+            /* background: url(Images/background.jpg); */
+            overflow: auto;
+        }
+
+        .section2 {
+            background-color: var(--secondaryColor);
+            border-bottom: 1px solid var(--borderColor); 
+            overflow: auto;
+        }
+        /* .post-section {
+            background-color: var(--mainColor);
+        } */
+
+        .posts {
+            padding: 100px;
+            background-color: var(--mainColor);
+        }
     </style>
 
 </head>
@@ -68,13 +88,85 @@
     </div>
 
     <section class="post-section">
-        <div class="post-content">
-            <h1 style="font-size: 56px;">Oopsies!!! Working on it...</h1>
-        </div>
+        <div class="main-container">
+            <div id="post-wrapper">
+                <h1 style="text-align: center;">Welcome to the Post Section</h1>
+                <div class="posts">
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/facedetect.png">
+                            <div class="post-preview">
+                                <h6 class="post-title">Marking attendace on FaceDetection</h6>
+                                <p class="post-intro">Built with Python programming language. Using AI detects the
+                                    registered face and Marks attendace.</p>
+                                <a href="post.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/ecomm.png">
+                            <div class="post-preview">
+                                <h6 class="post-title">Online E-Commerse Website</h6>
+                                <p class="post-intro">Online shopping store with paypal, credit and debit card payment
+                                    intergration and user must sign up and sign in for shopping</p>
+                                <a href="post.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="images/sweetshop.png">
+                            <div class="post-preview">
+                                <h6 class="post-title">Sweet Shop Website - Built and Deployed</h6>
+                                <p class="post-intro">Online store with paypal and Card payments intergration and guest
+                                    user
+                                    shopping
+                                </p>
+                                <a href="post.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="post-content">
+                <h1 style="font-size: 56px;">Oopsies!!! Working on it...</h1>
+            </div>
+
+            <div class="fysh">
+                <h1 style="font-size: 200px; text-align: center; background-color: #cdf1c3;">F Y S H</h1>
+            </div>
+
+        </div>
     </section>
 
+    <footer class="footer">
+        <div class="main-container">
+            <div class="social-links">
+                <div class="socials">
+                    <h3>Follow me</h3>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://twitter.com/macs023" class="fa fa-twitter"></a>
+                        <a target="_blank" href="" class="fa fa-facebook"></a>
+                        <a target="_blank" href="https://instagram.com/macs.023" class="fa fa-instagram"></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCjDp6a1C8y0yuYN2SkWnF8w"
+                            class="fa fa-youtube"></a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    Macs &copy; 2020 &nbsp &nbsp &nbsp Built by&nbsp<a href="#">Macs
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1abf4fc8be.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

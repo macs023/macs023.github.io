@@ -3,38 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macs</title>
 
     <link rel="stylesheet" href="main.css">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
 
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Russo+One&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+    <!-- This is header section -->
     <header class="section1">
+        <nav class="nav-wrapper">
+            <div id="logo">
+                <a href="index.html">
+                    <h2>Macs</h2>
+                </a>
+            </div>
+            <!-- <div class="hamburger">
+                <div class="hamburger-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div> -->
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about-wrapper">About</a></li>
+                <li><a href="index.html#post-wrapper">Projects</a></li>
+                <li><a href="index.html#contact-form">Contact</a></li>
+            </ul>
+        </nav>
         <div class="main-container">
             <div class="greeting-wrapper">
-                <h1>Hi, I'm Manoj Chandra</h1>
+                <h1>Welcome</h1>
             </div>
 
             <div class="intro-wrapper">
-                <nav class="nav-wrapper">
-                    <div id="logo">
-                        <a href="index.html">
-                            <h2>Macs</h2>
-                        </a>
-                    </div>
-                    <ul id="navigation">
-                        <li><a href="index.html#about-wrapper">About</a></li>
-                        <li><a href="index.html#post-wrapper">Projects</a></li>
-                        <li><a href="index.html#contact-form">Contact</a></li>
-                    </ul>
-                </nav>
                 <div class="left-column">
                     <img id="profile-pic" src="Images/manojchandra.jpg" alt="Profile Piture">
                     <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
@@ -42,11 +48,12 @@
                     <div id="theme-option-wrapper">
                         <div data-mode="light" id="light-mode" class="theme-dot"></div>
                         <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
-                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                        <!-- <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div> -->
                     </div>
 
-                    <p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+                    <p id="settings-note">*Theme settings will be saved for <br> your next visit
+                    </p>
                 </div>
 
                 <div class="right-column">
@@ -68,25 +75,33 @@
         </div>
     </header>
 
-    <section class="section2">
+    <section class=section2>
         <div class="main-container">
             <div id="about-wrapper">
                 <div class="about-me">
+                    <!-- <img src="" alt=""> -->
                     <h4>More about me</h4>
-
-                    <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
-
                     <p>While I keep busy studying at university, I still teach courses on YouTube by posting videos on
                         every Sunday.</p>
 
                     <hr>
 
-                    <h4>TOP EXPERTISE</h4>
+                    <h4>SKILLS</h4>
 
                     <p>Fullstack developer with primary focus on Django + React: <a target="_blank"
                             href="resume.pdf">Download Resume</a></p>
 
                     <div id="skills">
+                        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae consectetur ullam nobis
+                            temporibus
+                            at natus provident explicabo eum quasi minus fugit ab! Mollitia similique iure accusantium,
+                            velit aperiam id, impedit fuga labore nesciunt nam tempora repellat cupiditate facere quos
+                            ipsa
+                            eaque,
+                            nihil iste. Officia molestias quos ipsa obcaecati molestiae, porro laboriosam et commodi
+                            odio,
+                            fugit
+                            cupiditate.</p> -->
                         <ul>
                             <li>Python</li>
                             <li>Django</li>
@@ -104,13 +119,11 @@
                             <li>HTML/CSS</li>
                             <li>Bootstrap</li>
                         </ul>
-
                     </div>
-
                 </div>
 
                 <div class="social-links">
-                    <img id="social_img" src="Images/follow.jpg">
+                    <img id="social_img" src="images/follow.jpg">
                     <h3>Find me on Twitter & Youtube</h3>
 
                     <a target="_blank" href="https://www.youtube.com/channel/UCjDp6a1C8y0yuYN2SkWnF8w">YouTube:
@@ -118,20 +131,20 @@
                     <br>
                     <a target="_blank" href="https://twitter.com/macs023">Twitter: @Macs023</a>
                 </div>
-
             </div>
         </div>
     </section>
 
+
+    <!-- This is projects section -->
     <section class="section1">
         <div class="main-container">
             <div id="post-wrapper">
-                <h3 style="text-align: center;">Some of my projects</h3>
-
+                <h2 style="text-align: center;">Some of my projects</h2>
                 <div class="posts">
-                    <div>
+                	<div>
                         <div class="post">
-                            <img class="thumbnail" src="Images/ecomm.png">
+                            <img class="thumbnail" src="images/ecomm.png">
                             <div class="post-preview">
                                 <h6 class="post-title">Online E-Commerse Website</h6>
                                 <p class="post-intro">Online shopping store with paypal, credit and debit card payment
@@ -140,10 +153,9 @@
                             </div>
                         </div>
                     </div>
-
                     <div>
                         <div class="post">
-                            <img class="thumbnail" src="Images/sweetshop.png">
+                            <img class="thumbnail" src="images/sweetshop.png">
                             <div class="post-preview">
                                 <h6 class="post-title">Sweet Shop Website - Built and Deployed</h6>
                                 <p class="post-intro">Online store with paypal and Card payments intergration and guest
@@ -154,31 +166,36 @@
                             </div>
                         </div>
                     </div>
-
                     <div>
                         <div class="post">
-                            <img class="thumbnail" src="Images/facedetect.png">
+                            <img class="thumbnail" src="images/facedetect.png">
                             <div class="post-preview">
                                 <h6 class="post-title">Marking attendace on FaceDetection</h6>
                                 <p class="post-intro">Built with Python programming language. Using AI detects the
-                                    registered face and Marks attendace</p>
+                                    registered face and Marks attendace.</p>
                                 <a href="post.html">Read More</a>
                             </div>
                         </div>
                     </div>
 
-                    
-
                 </div>
             </div>
+            <p style="text-align: center;"><a href="post.html">+ View More</a></p>
+
+            <!-- <div class="fysh">
+                <h1 style="font-size: 200px; text-align: center; background-color: #cdf1c3;">F Y S H</h1>
+            </div> -->
+
         </div>
     </section>
 
+
     <section class="section2">
         <div class="main-container">
+            <a href=""></a>
             <h3 style="text-align: center;">Get In Touch</h3>
 
-            <form id="contact-form" method="POST">
+            <form id="contact-form">
                 <a name="contact"></a>
 
                 <label>Name</label>
@@ -188,7 +205,7 @@
                 <input class="input-field" type="text" name="subject">
 
                 <label>Email</label>
-                <input class="input-field" type="email" name="email">
+                <input class="input-field" type="text" name="email">
 
                 <label>Message</label>
                 <textarea class="input-field" name="message"></textarea>
@@ -202,7 +219,7 @@
         <div class="main-container">
             <div class="social-links">
                 <div class="socials">
-                    <h3>Follow us</h3>
+                    <h3>Follow me</h3>
                     <div class="social-icons">
                         <a target="_blank" href="https://twitter.com/macs023" class="fa fa-twitter"></a>
                         <a target="_blank" href="" class="fa fa-facebook"></a>
@@ -210,14 +227,10 @@
                         <a target="_blank" href="https://www.youtube.com/channel/UCjDp6a1C8y0yuYN2SkWnF8w"
                             class="fa fa-youtube"></a>
                     </div>
-
-                    <div class="chatbox">
-                        Chat with us
-                    </div>
                 </div>
 
                 <div class="footer-bottom">
-                    Macs &copy; 2020 &nbsp &nbsp &nbsp Built by&nbsp<a href="#">Macs</a>
+                    Macs &copy; 2020 &nbsp &nbsp &nbsp Built by&nbsp<a href="#">Macs
                 </div>
             </div>
         </div>
